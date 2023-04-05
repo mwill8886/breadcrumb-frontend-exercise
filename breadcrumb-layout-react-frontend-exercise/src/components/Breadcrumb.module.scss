@@ -1,0 +1,39 @@
+$separator-width: 10px;
+$truncation-width: 19px;
+
+:export {
+    separatorWidth: $separator-width;
+    truncationWidth: $truncation-width;
+}
+
+// TODO: complete these styles to match examples in the README
+// use the above variables to sync with JavaScript logic
+
+.container {
+    width: 100%;
+    overflow: visible;
+    font-size: 14px;
+    padding: 4px 0;
+    // border: 1px solid red; // view the bounding parent box
+}
+
+.separator {
+    display: inline-block;
+    height: 16px;
+
+    cursor: default;
+    user-select: none;
+
+    svg path {
+        stroke: #ccc;
+    }
+}
+
+.element {
+    display: inline-block;
+}
+
+.truncationPlaceholder {
+    display: inline-block;
+
+}
